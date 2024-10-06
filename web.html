@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/first.css">
+</head>
+
+<body>
+    <p>welcome</p>
+    Age:
+    <input type="text" class="text"><br><br>
+    <button class="submit">submit</button><br>
+
+
+
+    <p id="para1">0</p>
+    <div id="div1">
+        <button id="decbtn" class="btn">decrease</button>
+        <button id="resetbtn" class="btn">reset</button>
+        <button id="incbtn" class="btn">increase</button>
+    </div>
+    <div class="calculator">
+        <input type="text" id="text" disabled>
+        <div class="maincal">
+            <button class="button" onclick="appendNumber('1')">1👌</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendOperator('*')">*</button>
+            <button class="button" onclick="appendOperator('+')">+</button>
+            <button class="button" onclick="appendOperator('-')">-</button>
+            <button class="button" onclick="appendOperator('/')">/</button>
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button equals" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="js/first.js"></script>
+</body>
+
+</html>
